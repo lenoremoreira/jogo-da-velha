@@ -1,7 +1,12 @@
 body {
+    display: block;
+    text-align: center;
+    font-family: 'Londrina Solid', cursive;
+    background-color: #B0C4DE;
+}
+#main{
     display: flex;
     justify-content: center;
-    text-align: center;
 }
 .col{
     height:100px;
@@ -10,6 +15,7 @@ body {
     font-size: 5rem;
     font-family: sans-serif;
     text-align: center;
+    background-color: #ffffff;
 }
 .row{
     display: flex;
@@ -19,4 +25,11 @@ body {
 }
 #vencedor button{
     margin-left: 10px;
+}
+.button-simbolo{
+    width: 80px;
+    height: 80px;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 40px;
+    color: #4B0082;
 }

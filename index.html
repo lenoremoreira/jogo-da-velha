@@ -2,36 +2,41 @@
 <html lang="pt-br">
     
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
 </head>
 <body>
-  <div id="menu">
-    <h1>Jogador 1 escolha: X ou O</h1>
-    <button onclick="iniciar_jogador('x')">X</button>
-    <button onclick="iniciar_jogador('o')">O</button>
+  <div id="main">
+    <div id="menu">
+      <h1>Jogador 1 escolha: X ou O</h1>
+      <button class="button-simbolo" onclick="iniciar_jogador('x')">X</button>
+      <button class="button-simbolo" onclick="iniciar_jogador('o')">O</button>
+    </div>
+    <div id="table" class="hide">
+      <h1> Vez: <span id='vez-jogador'></span></h1>
+      <h3 id="vencedor"></h3>
+      <div class="row"> 
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+      <div class="row"> 
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+      <div class="row"> 
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+    </div>  
   </div>
-  <div id="table" class="hide">
-    <h1> Vez: <span id='vez-jogador'></span></h1>
-    <h3 id="vencedor"></h3>
-    <div class="row"> 
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-    </div>
-    <div class="row"> 
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-    </div>
-    <div class="row"> 
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-    </div>
-  </div>  
+  <h1>The Elder's Game</h1>
+  <img height="60px" width="auto" src="img/theelder.png">
   <script src="script/velha.js"></script>
 </body>
 </html>
